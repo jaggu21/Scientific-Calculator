@@ -1,8 +1,12 @@
 import java.util.*;
 import java.lang.Math;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 
 public class Calculator {
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
+
 	public static void PrintOperations(){
 		 System.out.println("Options Menu");
         System.out.println("");
@@ -15,26 +19,31 @@ public class Calculator {
 	
 	public double squareRoot(double number) {
        double result = Math.sqrt(number);
+       logger.info("Square root function");
        return result;
    }
 
    public int factorial(int number) {
+	   if(number == 0) {
+		   return 1; 
+	   }
        int result = number;
        for( int i = number-1; i >= 1; i--){
            result = result*i;
        }
-       
+       logger.info("Factorial function");
        return result;
    }
 
    public double naturalLog(double number) {
        double result = Math.log(number);
-     
+       logger.info("Natural Log function");
        return result;
    }
 
    public double power(double number, double b) {
        double result = Math.pow(number, b);
+       logger.info("Power function");
        return result;
    }
 	 
