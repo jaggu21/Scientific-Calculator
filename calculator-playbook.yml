@@ -1,8 +1,20 @@
----
-- name: Copy jar file to inventory i.e. Pull docker image
+- name: pull mini_project image
   hosts: all
   tasks:
-          - name: Pull junit devops image 
-            docker_image:
-                  name: jaggu21/scientific_calculator 
-                  source: pull
+
+    - name: stopping old container
+      shell: docker ps -aq --filter=status=running | xargs -r docker stop
+
+    - name: deleting old container
+      shell: docker ps -aq --filter=status=exited | xargs -r docker rm
+
+    - name: remove old image
+      shell: docker images -q --filter=reference="jaggu21/scientific_calculator" | xargs -r docker rmi -f
+
+    - name: pull the image
+      docker_image:
+        name: jaggu21/scientific_calculator
+        source: pull
+
+    - name: creating updated container
+      shell: docker run -id samaelarch/mini_project
