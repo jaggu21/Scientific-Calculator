@@ -32,8 +32,13 @@ public class Calculator_Test {
     }
 
     @Test
-    public void powerTest(){
+    public void powerTest1(){
         assertEquals("Power Test", 27.0, calculator.power(3.0, 3), 0.0f);
+    }
+    
+    @Test
+    public void powerTest2(){
+        assertEquals("Power Test", 64.0, calculator.power(4.0, 3), 0.0f);
     }
 
 }
