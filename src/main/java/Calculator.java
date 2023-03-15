@@ -19,7 +19,8 @@ public class Calculator {
 	
 	public double squareRoot(double number) {
        double result = Math.sqrt(number);
-       logger.info("Square root function");
+       logger.info("[SQRT] - " + number);
+       logger.info("[RESULT - SQRT] - " + result);
        return result;
    }
 
@@ -31,19 +32,22 @@ public class Calculator {
        for( int i = number-1; i >= 1; i--){
            result = result*i;
        }
-       logger.info("Factorial function");
+       logger.info("[FACTORIAL] - " + number);
+       logger.info("[RESULT - FACTORIAL] - " + result);
        return result;
    }
 
    public double naturalLog(double number) {
        double result = Math.log(number);
-       logger.info("Natural Log function");
+       logger.info("[LOG] - " + number);
+       logger.info("[RESULT - LOG] - " + result);
        return result;
    }
 
    public double power(double number, double b) {
        double result = Math.pow(number, b);
-       logger.info("Power function");
+       logger.info("[POWER] - " + number + ", " + b);
+       logger.info("[RESULT - POWER] - " + result);
        return result;
    }
 	 

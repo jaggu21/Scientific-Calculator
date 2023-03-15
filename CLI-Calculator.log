@@ -1,0 +1,36 @@
+16/Mar/2023:00:48:11 091 [Calculator.java] [INFO] Calculator Square root function
+16/Mar/2023:00:48:11 096 [Calculator.java] [INFO] Calculator Square root function
+16/Mar/2023:00:48:11 097 [Calculator.java] [INFO] Calculator Power function
+16/Mar/2023:00:48:11 097 [Calculator.java] [INFO] Calculator Power function
+16/Mar/2023:00:48:11 098 [Calculator.java] [INFO] Calculator Factorial function
+16/Mar/2023:00:48:11 099 [Calculator.java] [INFO] Calculator Natural Log function
+16/Mar/2023:00:48:43 555 [Calculator.java] [INFO] Calculator Square root function
+16/Mar/2023:00:48:43 560 [Calculator.java] [INFO] Calculator Square root function
+16/Mar/2023:00:48:43 561 [Calculator.java] [INFO] Calculator Power function
+16/Mar/2023:00:48:43 562 [Calculator.java] [INFO] Calculator Power function
+16/Mar/2023:00:48:43 563 [Calculator.java] [INFO] Calculator Factorial function
+16/Mar/2023:00:48:43 564 [Calculator.java] [INFO] Calculator Natural Log function
+16/Mar/2023:00:49:27 628 [Calculator.java] [INFO] Calculator Square root function
+16/Mar/2023:00:49:27 633 [Calculator.java] [INFO] Calculator Square root function
+16/Mar/2023:00:49:27 633 [Calculator.java] [INFO] Calculator Power function
+16/Mar/2023:00:49:27 634 [Calculator.java] [INFO] Calculator Power function
+16/Mar/2023:00:49:27 634 [Calculator.java] [INFO] Calculator Factorial function
+16/Mar/2023:00:49:27 635 [Calculator.java] [INFO] Calculator Natural Log function
+16/Mar/2023:00:53:05 078 [Calculator.java] [INFO] Calculator Square root function
+16/Mar/2023:00:53:05 083 [Calculator.java] [INFO] Calculator Square root function
+16/Mar/2023:00:53:05 084 [Calculator.java] [INFO] Calculator Power function
+16/Mar/2023:00:53:05 084 [Calculator.java] [INFO] Calculator Power function
+16/Mar/2023:00:53:05 085 [Calculator.java] [INFO] Calculator Factorial function
+16/Mar/2023:00:53:05 085 [Calculator.java] [INFO] Calculator Natural Log function
+16/Mar/2023:00:58:53 852 [Calculator.java] [INFO] Calculator [SQRT] - 9.0
+16/Mar/2023:00:58:53 856 [Calculator.java] [INFO] Calculator [RESULT - SQRT] - 3.0
+16/Mar/2023:00:58:53 857 [Calculator.java] [INFO] Calculator [SQRT] - 0.0
+16/Mar/2023:00:58:53 857 [Calculator.java] [INFO] Calculator [RESULT - SQRT] - 0.0
+16/Mar/2023:00:58:53 858 [Calculator.java] [INFO] Calculator [POWER] - 3.0, 3.0
+16/Mar/2023:00:58:53 859 [Calculator.java] [INFO] Calculator [RESULT - POWER] - 27.0
+16/Mar/2023:00:58:53 859 [Calculator.java] [INFO] Calculator [POWER] - 4.0, 3.0
+16/Mar/2023:00:58:53 859 [Calculator.java] [INFO] Calculator [RESULT - POWER] - 64.0
+16/Mar/2023:00:58:53 860 [Calculator.java] [INFO] Calculator [FACTORIAL] - 6
+16/Mar/2023:00:58:53 860 [Calculator.java] [INFO] Calculator [RESULT - FACTORIAL] - 720
+16/Mar/2023:00:58:53 861 [Calculator.java] [INFO] Calculator [LOG] - 2.718
+16/Mar/2023:00:58:53 861 [Calculator.java] [INFO] Calculator [RESULT - LOG] - 0.999896315728952
