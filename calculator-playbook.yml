@@ -2,6 +2,11 @@
   hosts: all
   tasks:
 
+    - name: Start docker service
+      service:
+        name: docker
+        state: started
+
     - name: stopping old container
       shell: docker ps -aq --filter=status=running | xargs -r docker stop
 
@@ -11,10 +16,8 @@
     - name: remove old image
       shell: docker images -q --filter=reference="jaggu21/scientific_calculator" | xargs -r docker rmi -f
 
-    - name: pull the image
-      docker_image:
-        name: jaggu21/scientific_calculator
-        source: pull
+    - name: pull docker image
+      shell: docker pull jaggu21/scientific_calculator
 
     - name: creating updated container
       shell: docker run -id jaggu21/scientific_calculator
