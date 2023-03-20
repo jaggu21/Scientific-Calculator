@@ -28,7 +28,7 @@ public class Calculator_Test {
 
     @Test
     public void naturalLogTest(){
-        assertEquals("Natural Log Test", 1.0, calculator.naturalLog(2.718), 0.2f);
+        assertEquals("Natural Log Test 1", 1.0, calculator.naturalLog(2.718), 0.2f);
     }
 
     @Test
