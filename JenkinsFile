@@ -40,7 +40,6 @@ pipeline {
         }
         stage('Deploy'){
         steps {
-            sh "/usr/bin/pip3 install docker"
             ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'inventory', playbook: 'calculator-playbook.yml', sudoUser: null
             }
         }
