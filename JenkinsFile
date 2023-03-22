@@ -1,0 +1,49 @@
+pipeline {
+    environment{
+        imageName = ""
+    }
+    agent any
+
+    stages {
+        stage('Git Pull') {
+            steps {
+                // Get some code from a GitHub repository
+                git url: 'https://github.com/jaggu21/Scientific-Calculator',
+                    branch:"main"
+            }
+        }
+        stage('Maven Build'){
+            steps{
+                script{
+                    sh 'mvn clean install'
+                    
+                } 
+            }
+        }
+        stage('Docker Image Build')
+        {
+            steps{
+                script{
+                    imageName = docker.build "jaggu21/scientific_calculator:latest"
+                }
+            }
+        }
+        stage('Push Docker Image')
+        {
+            steps{
+                script{
+                    docker.withRegistry("", 'docker-hub-cred' ){
+                        imageName.push()
+                    }
+                }
+            }
+        }
+        stage('Deploy'){
+        steps {
+            sh "/usr/bin/pip3 install docker"
+            ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'inventory', playbook: 'calculator-playbook.yml', sudoUser: null
+            }
+        }
+    }
+}
+
